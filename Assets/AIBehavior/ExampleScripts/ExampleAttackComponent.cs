@@ -11,10 +11,9 @@ namespace AIBehaviorExamples
 		public float aimMetersAboveTarget = 1.5f;
 		public GameObject Player;
 
-
 		public void MeleeAttack(AttackData attackData)
 		{
-			Player.GetComponent<PlayerScript>().takeDamage();
+			Player.GetComponent<PlayerScript>().takeDamage();	
 		}
 
 
