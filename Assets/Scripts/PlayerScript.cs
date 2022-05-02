@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class PlayerScript : MonoBehaviour
 {
     private int health = 100;
-    public Text healthText;
+    public Text healthText, scoreText;
     public Slider healthSlider;
     public Camera myCamera;
     private AudioSource s;
     public AudioClip attackSound;
+    private int score = 0;
+    private static int currentLevel = 1;
 
     public void Start()
     {
@@ -28,6 +30,25 @@ public class PlayerScript : MonoBehaviour
         if(health==0)
         {
             SceneManager.LoadScene("Lose");
+        }
+    }
+    public void OnTriggerEnter(Collider x)
+    {
+        if(x.tag == "Pickup")
+        {
+            score++;
+            scoreText.text = "Score: " + score;
+            x.gameObject.SetActive(false);
+            if(score== 8)
+            {
+                currentLevel++;
+                if(currentLevel == 3)
+                {
+                    SceneManager.LoadScene("Win");
+                }
+                SceneManager.LoadScene("Level" + currentLevel);
+
+            }
         }
     }
 }
