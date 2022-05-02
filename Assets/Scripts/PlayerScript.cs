@@ -27,31 +27,37 @@ public class PlayerScript : MonoBehaviour
         healthSlider.value = health / 100f;
         s.PlayOneShot(attackSound);
 
-        if(health==0)
+        if (health == 0)
         {
             SceneManager.LoadScene("Lose");
         }
     }
     public void OnTriggerEnter(Collider x)
     {
-        if(x.tag == "Pickup")
+        if (x.tag == "Pickup")
         {
             score++;
-            health += 20;
-            healthText.text = "health " + health + "%";
-            healthSlider.value = health / 100f;
+
+
             scoreText.text = "Score: " + score;
             x.gameObject.SetActive(false);
-            if(score== 8)
+            if (health < 100F)
             {
-                currentLevel++;
-                if(currentLevel == 3)
+                health += 20;
+                healthText.text = "health " + health + "%";
+                healthSlider.value = health / 100f;
+            }
+                if (score == 8)
                 {
-                    SceneManager.LoadScene("Win");
-                }
-                SceneManager.LoadScene("Level" + currentLevel);
+                    currentLevel++;
+                    if (currentLevel == 3)
+                    {
+                        SceneManager.LoadScene("Win");
+                    }
+                    SceneManager.LoadScene("Level" + currentLevel);
 
+                }
             }
         }
     }
-}
+
