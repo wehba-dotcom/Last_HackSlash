@@ -37,6 +37,9 @@ public class PlayerScript : MonoBehaviour
         if(x.tag == "Pickup")
         {
             score++;
+            health += 20;
+            healthText.text = "health " + health + "%";
+            healthSlider.value = health / 100f;
             scoreText.text = "Score: " + score;
             x.gameObject.SetActive(false);
             if(score== 8)
