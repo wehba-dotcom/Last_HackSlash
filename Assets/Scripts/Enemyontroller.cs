@@ -8,9 +8,13 @@ using UnityEngine.AI;
 public class Enemyontroller : MonoBehaviour
 {
 
-    public Transform Player;
+  //  public Transform Player;
 
     NavMeshAgent agent;
+    Animator anim;
+
+    bool canAttack = true;
+    float attackCoolDown = 3f;
 
     public float attackRaduis = 5;
 
@@ -18,16 +22,34 @@ public class Enemyontroller : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, Player.position);
+        anim.SetFloat("Speed", agent.velocity.magnitude);
+        float distance = Vector3.Distance(transform.position, LevelManager.instance.player.position);
         if (distance < attackRaduis)
         {
-            agent.SetDestination(Player.position);
+            agent.SetDestination(LevelManager.instance.player.position);
+            if (distance <= agent.stoppingDistance)
+            {
+                if(canAttack)
+                {
+                    StartCoroutine(coolDown());
+                    anim.SetTrigger("Attack");
+                }
+            }
+
         }
+    }
+    IEnumerator coolDown()
+
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(attackCoolDown);
+        canAttack = true;
     }
 
 
