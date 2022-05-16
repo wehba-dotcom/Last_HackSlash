@@ -11,7 +11,7 @@ public class PlayerScript : MonoBehaviour
     public Slider healthSlider;
     public Camera myCamera;
     private AudioSource s;
-    public AudioClip attackSound;
+    public AudioClip attackSound, collectSound;
     private int score = 0;
     private static int currentLevel = 1;
 
@@ -36,6 +36,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (x.tag == "Pickup")
         {
+            s.PlayOneShot(collectSound);
             score++;
 
 
