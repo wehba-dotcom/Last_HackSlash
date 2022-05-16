@@ -14,7 +14,7 @@ public class Enemyontroller : MonoBehaviour
     Animator anim;
 
     bool canAttack = true;
-    float attackCoolDown = 3f;
+    float attackCoolDown = 2f;
 
     public float attackRaduis = 5;
 
@@ -39,6 +39,7 @@ public class Enemyontroller : MonoBehaviour
                 {
                     StartCoroutine(coolDown());
                     anim.SetTrigger("Attack");
+                    LevelManager.instance.player.GetComponent<PlayerScript>().takeDamage();
                 }
             }
 
