@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 
 
-public class Enemyontroller : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
 
-  //  public Transform Player;
+ // public Transform Player;
 
     NavMeshAgent agent;
     Animator anim;
@@ -33,11 +33,12 @@ public class Enemyontroller : MonoBehaviour
         if (distance < attackRaduis)
         {
             agent.SetDestination(LevelManager.instance.player.position);
+           
             if (distance <= agent.stoppingDistance)
             {
                 if(canAttack)
                 {
-                    StartCoroutine(coolDown());
+                    StartCoroutine(cooldown());
                     anim.SetTrigger("Attack");
                     LevelManager.instance.player.GetComponent<PlayerScript>().takeDamage();
                 }
@@ -45,7 +46,7 @@ public class Enemyontroller : MonoBehaviour
 
         }
     }
-    IEnumerator coolDown()
+    IEnumerator cooldown()
 
     {
         canAttack = false;

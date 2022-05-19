@@ -11,4 +11,7 @@ public void playerAttack()
         Debug.Log("player attack");
         charmove.DoAttack();
     }
+
+
+   
 }
