@@ -5,10 +5,15 @@ using UnityEngine;
 public class idleState : StateMachineBehaviour
 {
     float timer;
+    Transform Player;
+    float chasingRange = 8;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timer = 0;
+         Player = GameObject.FindGameObjectWithTag("Player").transform;
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -18,6 +23,9 @@ public class idleState : StateMachineBehaviour
         if(timer > 5)
         {
             animator.SetBool("isPtrolling", true);
+            float distance = Vector3.Distance(Player.position, animator.transform.position);
+            if(distance < chasingRange)
+            animator.SetBool("isChassing",true);
         }
     }
 
