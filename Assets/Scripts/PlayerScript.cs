@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
+ 
     private int health = 100;
     public Text healthText, scoreText;
     public Slider healthSlider;
@@ -18,6 +19,8 @@ public class PlayerScript : MonoBehaviour
     public void Start()
     {
         s = myCamera.GetComponent<AudioSource>();
+       
+        
     }
 
     public void takeDamage()
@@ -25,6 +28,7 @@ public class PlayerScript : MonoBehaviour
         health -= 20;
         healthText.text = "health " + health + "%";
         healthSlider.value = health / 100f;
+         transform.localScale= new Vector3(Random.Range(-1 ,-2.5f),1, Random.Range(-1, -2.5f));
         s.PlayOneShot(attackSound);
 
         if (health == 0)
@@ -34,12 +38,13 @@ public class PlayerScript : MonoBehaviour
     }
     public void OnTriggerEnter(Collider x)
     {
+        
         if (x.tag == "Pickup")
         {
             s.PlayOneShot(collectSound);
             score++;
-
-
+            transform.localScale= new Vector3(Random.Range(1 ,2.5f),2, Random.Range(1, 2.5f));
+             
             scoreText.text = "Score: " + score;
             x.gameObject.SetActive(false);
             if (health < 100F)

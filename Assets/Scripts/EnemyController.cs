@@ -61,7 +61,7 @@ public class EnemyController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
            
-            Destroy(gameObject);
+            transform.localScale= new Vector3(2,2,2);
         }
     }
 }
