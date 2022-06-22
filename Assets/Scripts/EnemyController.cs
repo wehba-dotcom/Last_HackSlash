@@ -60,7 +60,7 @@ public class EnemyController : MonoBehaviour
 
  IEnumerator waitTime()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
     }
 
