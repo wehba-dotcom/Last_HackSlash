@@ -43,7 +43,7 @@ public class PlayerScript : MonoBehaviour
         {
             s.PlayOneShot(collectSound);
             score++;
-            transform.localScale= new Vector3(Random.Range(1 ,2.5f),2, Random.Range(1, 2.5f));
+            
              
             scoreText.text = "Score: " + score;
             x.gameObject.SetActive(false);

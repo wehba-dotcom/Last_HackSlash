@@ -12,7 +12,8 @@ public class EnemyController : MonoBehaviour
 
     NavMeshAgent agent;
     Animator anim;
-
+    public int HP = 4;
+    public int damageAmount= 3;
     bool canAttack = true;
     float attackCoolDown = 2f;
 
@@ -56,12 +57,26 @@ public class EnemyController : MonoBehaviour
 
 
 
+    public void takeDamage(int DamageAmount)
+    {
+        HP -= DamageAmount;
+        if(HP <= 0)
+        {
+           anim.SetTrigger("die"); 
+        } 
+        else
+        {
+           anim.SetTrigger("damage");
+        }
+    }
+
+
     private void OnTriggerEnter(Collider other )
     {
         if (other.CompareTag("Player"))
         {
-           
-           anim.SetTrigger("die");
+           takeDamage(damageAmount);
+          
         }
     }
 }

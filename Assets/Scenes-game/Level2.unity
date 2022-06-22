@@ -2586,7 +2586,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2959802, y: 1}
+    m_SensorSize: {x: 2.3960047, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3620,6 +3620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ed2b067c4f4a34cae91aa676fbfd1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 100
+  damageAmount: 5
   attackRaduis: 10
 --- !u!195 &761470117
 NavMeshAgent:
@@ -5369,7 +5371,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2959802, y: 1}
+    m_SensorSize: {x: 2.3960047, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5489,6 +5491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ed2b067c4f4a34cae91aa676fbfd1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 4
+  damageAmount: 3
   attackRaduis: 10
 --- !u!54 &1232673762
 Rigidbody:
@@ -9433,7 +9437,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2959802, y: 1}
+    m_SensorSize: {x: 2.3960047, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -9925,7 +9929,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2959802, y: 1}
+    m_SensorSize: {x: 2.3960047, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
