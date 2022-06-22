@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1097.143
-    height: 534.8572
+    width: 1097.1428
+    height: 534.8571
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1097.143
+    width: 1097.1428
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 514.8572
-    width: 1097.143
+    y: 514.8571
+    width: 1097.1428
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1097.143
-    height: 484.85718
+    width: 1097.1428
+    height: 484.85712
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 3041
+  controlID: 368
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,11 +140,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 773.7143
-    height: 484.85718
+    height: 484.85712
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 3046
+  controlID: 323
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 3032
+  controlID: 324
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,7 +242,7 @@ MonoBehaviour:
     x: 0
     y: 285.14285
     width: 773.7143
-    height: 199.71432
+    height: 199.71426
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -268,8 +268,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 773.7143
     y: 0
-    width: 323.42865
-    height: 484.85718
+    width: 323.42853
+    height: 484.85712
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
@@ -349,8 +349,8 @@ MonoBehaviour:
       y: 21
       width: 582.5714
       height: 243.14285
-    m_Scale: {x: 1.6417843, y: 1.6417844}
-    m_Translation: {x: 291.2857, y: 121.571434}
+    m_Scale: {x: 1.6417843, y: 1.6417843}
+    m_Translation: {x: 291.2857, y: 121.57143}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
       x: -177.4202
       y: -74.048355
       width: 354.8404
-      height: 148.0967
+      height: 148.09671
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1019.5, y: 462.25}
@@ -400,9 +400,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c67c0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aa97ffffd09cffffa0aaffffc0b1ffffaab6ffff94bbffff1efbffffb45e0000
+      m_ExpandedIDs: 1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -868,7 +868,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 225.28568}
     m_SelectedIDs: 76680000
     m_LastClickedID: 26742
-    m_ExpandedIDs: 000000005c6800006c680000a668000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000646800006668000068680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -896,7 +896,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005c6800006c680000a668000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000646800006668000068680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -975,7 +975,7 @@ MonoBehaviour:
     x: 0
     y: 357.7143
     width: 772.7143
-    height: 178.71432
+    height: 178.71426
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1002,8 +1002,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 773.7143
     y: 72.571434
-    width: 322.42865
-    height: 463.85718
+    width: 322.42853
+    height: 463.85712
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
