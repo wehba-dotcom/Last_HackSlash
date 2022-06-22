@@ -28,7 +28,7 @@ public class PlayerScript : MonoBehaviour
         health -= 20;
         healthText.text = "health " + health + "%";
         healthSlider.value = health / 100f;
-         transform.localScale= new Vector3(Random.Range(-1 ,-2.5f),1, Random.Range(-1, -2.5f));
+    
         s.PlayOneShot(attackSound);
 
         if (health == 0)
@@ -43,8 +43,6 @@ public class PlayerScript : MonoBehaviour
         {
             s.PlayOneShot(collectSound);
             score++;
-            
-             
             scoreText.text = "Score: " + score;
             x.gameObject.SetActive(false);
             if (health < 100F)

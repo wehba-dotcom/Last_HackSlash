@@ -55,7 +55,11 @@ public class EnemyController : MonoBehaviour
         canAttack = true;
     }
 
-
+ IEnumerator waitTime()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Destroy(gameObject);
+    }
 
     public void takeDamage(int DamageAmount)
     {
@@ -63,6 +67,7 @@ public class EnemyController : MonoBehaviour
         if(HP <= 0)
         {
            anim.SetTrigger("die"); 
+            StartCoroutine(waitTime());
         } 
         else
         {
