@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class LockAtPlayer : MonoBehaviour
 {
-   public Transform cam;
-
+   Camera cam;
+void Start()
+{
+    cam = Camera.main;
+}
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
-        transform.LookAt(cam);
+        transform.LookAt(transform.position + cam.transform.rotation* Vector3.forward, cam.transform.rotation * Vector3.up);
     }
 }
