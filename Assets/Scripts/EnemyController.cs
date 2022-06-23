@@ -5,17 +5,15 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 
 
-
 public class EnemyController : MonoBehaviour
 {
 
  // public Transform Player;
-
+    public Slider healthBar;
     NavMeshAgent agent;
     Animator anim;
     public int HP = 4;
     public int damageAmount= 3;
-    public Slider healthBar;
     bool canAttack = true;
     float attackCoolDown = 2f;
 
@@ -31,7 +29,8 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.value=HP;
+
+        healthBar.value= HP;
         anim.SetFloat("Speed", agent.velocity.magnitude);
         float distance = Vector3.Distance(transform.position, LevelManager.instance.player.position);
         if (distance < attackRaduis)
