@@ -3156,7 +3156,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9881188, y: 1}
+    m_SensorSize: {x: 1.963035, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3794,7 +3794,7 @@ MonoBehaviour:
   scoreText: {fileID: 425592157}
   healthSlider: {fileID: 836961682}
   myCamera: {fileID: 963194227}
-  attackSound: {fileID: 8300000, guid: b58de0acbfe2dbd419731dd3e3bfe3b6, type: 3}
+  attackSound: {fileID: 8300000, guid: 33ea6461d75f28d44a28a4b63e831e05, type: 3}
   collectSound: {fileID: 8300000, guid: 61ef73b16c0a504429022d96d0478b4a, type: 3}
 --- !u!1 &425592155
 GameObject:
@@ -7486,7 +7486,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9881188, y: 1}
+    m_SensorSize: {x: 1.963035, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11781,7 +11781,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9881188, y: 1}
+    m_SensorSize: {x: 1.963035, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12707,7 +12707,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9881188, y: 1}
+    m_SensorSize: {x: 1.963035, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
